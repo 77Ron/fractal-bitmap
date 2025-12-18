@@ -19,7 +19,7 @@ using namespace mandelbrotns;
 int main()
 {
     //Set seed to a random positive or negative number.
-    const int seed = -9866;
+    const int seed = -9004;
     
     
     const int WIDTH = 800;
@@ -36,7 +36,9 @@ int main()
     F.fractalzoom(160, 217, 0.14);
     F.fractalzoom(478, 423, 0.14);
 
-    F.run("Mandelbrot" + to_string(seed) + ".bmp", seed);
+    string wr_path = ""; // Path to write file, ex.: "C:/Users/?/Desktop/?/";
+
+    F.run(wr_path + "Mandelbrot" + to_string(seed) + ".bmp", seed);
 
     cout << "Finished." << endl;
 

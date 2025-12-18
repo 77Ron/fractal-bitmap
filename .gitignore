@@ -1,0 +1,6 @@
+#Ignore files
+
+vc140.pdb
+
+**.vscode/
+
